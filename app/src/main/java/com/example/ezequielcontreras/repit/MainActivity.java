@@ -6,6 +6,7 @@ import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 import android.view.View;
 import android.widget.Button;
+import android.widget.ImageView;
 
 import java.io.IOException;
 
@@ -13,12 +14,16 @@ public class MainActivity extends AppCompatActivity {
 
     DBHelper db;
     Button repit;
+    ImageView reps;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
         repit = (Button)findViewById(R.id.RepIt);
+        reps = (ImageView)findViewById(R.id.reps);
+
+        reps.setImageResource(R.drawable.reps);
 
         db = new DBHelper(this);
 
