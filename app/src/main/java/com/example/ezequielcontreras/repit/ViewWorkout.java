@@ -30,9 +30,10 @@ public class ViewWorkout extends AppCompatActivity {
         image2 = (ImageView)findViewById(R.id.image2);
         db = new DBHelper(this);
 
-/*        image1.setImageResource(R.drawable.barbell_squats1);
+       image1.setImageResource(R.drawable.barbell_squats1);
         image2.setImageResource(R.drawable.barbell_squats2);
-*/
+        textView.setText("Barbell Squats 5x8");
+
         cardView.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
