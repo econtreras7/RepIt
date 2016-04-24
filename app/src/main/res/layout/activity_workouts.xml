@@ -24,7 +24,7 @@
             android:layout_height="wrap_content"
             android:text="@string/customWO"
             android:id="@+id/custom"
-            
+
             />
 
     </LinearLayout>
@@ -34,7 +34,7 @@
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_below="@+id/LLWork"
-        android:id="@+id/workouts"
+        android:id="@android:id/list"
         />
 
 
