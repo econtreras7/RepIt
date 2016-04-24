@@ -17,7 +17,7 @@ import java.util.Arrays;
  */
 public class Workouts extends ListActivity {
 
-    Button custom;
+    //Button custom;
     ListView workouts;
     ArrayAdapter<String> workoutAdapter;
     static final String[] muscles = {"Chest","Arms","Back","Legs","Shoulders","Abs"};
@@ -27,19 +27,19 @@ public class Workouts extends ListActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_workouts);
-        custom = (Button)findViewById(R.id.custom);
+        //custom = (Button)findViewById(R.id.custom);
         workoutAdapter = new ArrayAdapter<String>(this, android.R.layout.simple_list_item_1,lista);
         setListAdapter(workoutAdapter);
         lista.addAll(Arrays.asList(muscles));
         workoutAdapter.notifyDataSetChanged();
 
-        custom.setOnClickListener(new View.OnClickListener() {
+        /*custom.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
                     /*Intent myIntent = new Intent(Workouts.this, .);
-                    startActivity(myIntent);*/
+                    startActivity(myIntent);
             }
-        });
+        });*/
 
 
 
