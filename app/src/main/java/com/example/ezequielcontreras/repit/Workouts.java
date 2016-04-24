@@ -50,7 +50,7 @@ public class Workouts extends ListActivity {
         super.onListItemClick(l, v, position, id);
 
         String Data = l.getItemAtPosition(position).toString();
-
+        Data=Data.toLowerCase();
         //String Data="deffwrgr";
         Intent myIntent = new Intent(Workouts.this,ViewWorkout.class);
         myIntent.putExtra("extra", Data);
