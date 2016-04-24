@@ -9,11 +9,6 @@
     android:paddingTop="@dimen/activity_vertical_margin"
     tools:context="com.example.ezequielcontreras.repit.MainActivity">
 
-    <TextView
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="Hello World!"
-        android:id="@+id/textView" />
 
     <CheckedTextView
         android:layout_width="wrap_content"
@@ -21,9 +16,17 @@
         android:shadowColor="@color/colorAccent"
         android:text="New CheckedTextView"
         android:id="@+id/checkedTextView"
-        android:layout_toRightOf="@+id/textView"
-        android:layout_alignParentRight="true"
-        android:layout_alignParentEnd="true"
-        android:layout_below="@+id/textView" />
+        android:gravity="top"
+        android:layout_centerHorizontal="true"
+        />
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:gravity="bottom|center"
+        android:layout_alignParentBottom="true"
+        android:layout_centerInParent="true"
+        android:id="@+id/RepIt"
+    />
 
 </RelativeLayout>
