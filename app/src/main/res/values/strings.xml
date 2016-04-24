@@ -1,5 +1,5 @@
 <resources>
     <string name="app_name">RepIt</string>
-    <string name="chooseWorkout">chooseWorkout</string>
+    <string name="chooseWorkout">Choose Workout</string>
     <string name="customWO">custom</string>
 </resources>
